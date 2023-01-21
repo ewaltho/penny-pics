@@ -124,6 +124,12 @@ footer {
     text-align: center;
 }
 
+@media screen and (max-width: 13000px) {
+        .about-text {
+        font-size: 30px;
+    }
+}
+
 @media screen and (max-width: 950px) {
     .img-caption p {
         font-size: 30px;
