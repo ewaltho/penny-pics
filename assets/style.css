@@ -61,6 +61,7 @@ header h1 {
 .img-caption p {
     color: rgb(51, 52, 52);
     font-size: 40px;
+    font-weight: bold;
     position: absolute;
     top: 50%;
     left: 50%;
