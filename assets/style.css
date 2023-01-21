@@ -21,11 +21,6 @@ header h1 {
     color: rgb(51, 52, 52);
 }
 
-.row img {
-    height: auto;
-    width: 20%;
-    margin: 10px;
-}
 
 .row {
     margin: 20px;
@@ -36,4 +31,128 @@ header h1 {
 .column {
     display: flex;
     flex-direction: column;
+}
+
+.img-wrapper {
+    display: block;
+    width: 95%;
+    height: auto;
+    position: relative;
+    margin: 10px;
+}
+
+.img-caption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(255, 255, 255, 0.55);
+}
+
+.img-wrapper:hover .img-caption {
+    opacity: 1;
+}
+
+.img-caption p {
+    color: rgb(51, 52, 52);
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.column img {
+    height: 100%;
+    width: 100%;
+}
+
+.main-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.main-picture {
+    position: relative;
+    width: 70%;
+}
+
+.main-picture img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.about-me {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.main-picture:hover .about-me {
+    opacity: 1;
+}
+
+.about-text {
+    color: rgb(51, 52, 52);
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+@media screen and (max-width: 950px) {
+    .img-caption p {
+        font-size: 30px;
+    }
+
+    .about-text {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .column {
+        align-items: center;
+    }
+
+    .main-picture {
+        width: 100%;
+        margin: 20px;
+    }
+
+    .img-caption p {
+        font-size: 40px;
+    }
+
+    .about-text {
+        font-size: 20px;
+    }
 }
