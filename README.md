@@ -9,7 +9,7 @@ Every image has hover effect giving you a peek into Penny's thoughts. This page 
 ![penny pics screenshot](/assets/images/screenshot.png)
 
 ## Installation
-No installation required
+No installation required, just follow this link: https://ewaltho.github.io/penny-pics/
 
 ## Credits
 Just me!
